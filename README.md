@@ -1,15 +1,15 @@
 # Experimental Ads Blocker
 
-I try to understand how ads blockers are works, for doing this i need the help of the browser, the most friendly one is chrome that give a full development environment.
+I try to understand how ads blockers works, for doing this i need the help of the browser, the most friendly is chrome that supply full development environment without additional requirements.
 
-The main idea is to hook the request before sending it to the server, chrome api give a set of listeners to achieve this, so basically is pretty easy, for the experiment i took 4 major news israeli sites loaded with ads and to see the effectiveness.
+The main idea is to hook the request before sending it to the server, chrome api provide a set of listeners to achieve this, so basically is pretty easy, for the experiment i took 4 major news israeli sites loaded with ads to see the effectiveness.
  
 - Walla.co.il
 - Mako.co.il
 - 20il.co.il
 - Ynet.co.il
 
-The ads blocker support 2 kinds of filtering, the first is full isolation it’s mean that all url that not match to set of patterns will be dropped, the second is filtering only commercial video content.
+The ads blocker support 2 kinds of filtering, the first is full isolation it’s mean that url that not match to set of patterns will be block , the second is filtering only commercial video content.
 
 ## Structure ##
 
