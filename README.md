@@ -1,5 +1,5 @@
-# Experimental Ads Blocker
-
+![alt text](https://github.com/proxytype/experimentalAdsBlocker/blob/master/assets/release.png)
+      
 I try to understand how ads blockers works, for doing this i need the help of the browser, the most friendly is chrome that supply full development environment without additional requirements.
 
 The main idea is to hook the request before sending it to the server, chrome api provide a set of listeners to achieve this, so basically is pretty easy, for the experiment i took 4 major news israeli sites loaded with ads to see the effectiveness.
