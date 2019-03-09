@@ -22,3 +22,7 @@ The ads blocker support 2 kinds of filtering, the first is full isolation it’s
 **patterns(string[])** - the patterns to search in requested url.
 
 **stealthMode(string)** - VIDEO / ISOLATION.
+
+## Conclusion ##
+Mako, Walla, 20IL mostly affected, the commercial content come from 3rd party side, make it easy to detect while Ynet store all the content under the main domain what make it much harder to know the different.
+
