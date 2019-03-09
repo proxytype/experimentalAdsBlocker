@@ -27,4 +27,5 @@ The ads blocker support 2 kinds of filtering, the first is full isolation it’s
 
 Mako, Walla, 20IL mostly affected, the commercial content come from 3rd party site, make it easy to detect while Ynet store all the content under the main domain what make it much harder to know the relative content.
 
-
+## Resources ##
+https://developer.chrome.com/apps/about_apps
