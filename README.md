@@ -1,6 +1,6 @@
 # Experimental Ads Blocker
 
-I try to understand how ads blockers are works, for doing this i need the help of the browser, the most friendly one is chrome that give me full development environment.
+I try to understand how ads blockers are works, for doing this i need the help of the browser, the most friendly one is chrome that give a full development environment.
 
 The main idea is to hook the request before send it to the server, chrome api give a set of listeners to achieve this, so basically is pretty easy, for the experiment i took 4 major news israeli sites loaded with ads and to see the effectiveness.
  
