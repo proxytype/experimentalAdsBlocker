@@ -8,6 +8,7 @@ var supportedSite = supportedSiteDefault;
 chrome.runtime.onStartup.addListener(function (details) {
     console.log("Extenstion Start");
     chrome.storage.local.clear(function () {
+        initStorage(undefined);
     })
 });
 
@@ -15,16 +16,7 @@ chrome.runtime.onMessage.addListener(function (message, sender, handler) {
 
     if (message) {
         if (message.type == MESSAGE_GET_LIST) {
-            chrome.storage.local.get(KEY_DATA, function (result) {
-                if (result.data == undefined) {
-                    chrome.storage.local.set({ [KEY_DATA]: JSON.stringify(supportedSite) });
-                } else {
-                    supportedSite = JSON.parse(result.data);
-                }
-
-                handler(supportedSite);
-
-            });
+            initStorage(handler);
         }
 
         if (message.type == MESSAGE_UPDATE_LIST) {
@@ -37,6 +29,23 @@ chrome.runtime.onMessage.addListener(function (message, sender, handler) {
 
     return true;
 });
+
+function initStorage(handler) {
+
+    chrome.storage.local.get(KEY_DATA, function (result) {
+        if (result.data == undefined) {
+            chrome.storage.local.set({ [KEY_DATA]: JSON.stringify(supportedSite) });
+        } else {
+            supportedSite = JSON.parse(result.data);
+        }
+
+        if (handler != undefined) {
+            handler(supportedSite);
+        }
+
+    });
+
+}
 
 chrome.webRequest.onBeforeRequest.addListener(
     function (details) {
