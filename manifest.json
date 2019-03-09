@@ -1,0 +1,34 @@
+{
+  "name": "Experimental AdBlocker",
+  "description": "Blocking Videos and Commercial Content",
+  "manifest_version": 2,
+  "version": "1.0",
+
+  "permissions": [
+    "*://*/*",
+    "webRequest",
+    "webRequestBlocking",
+    "storage"
+  ],
+
+  "browser_action": {
+    "default_popup": "html/options.html"
+  },
+
+  "background": {
+    "scripts": [ "js/jquery.js", "js/common.js", "js/background.js" ]
+  },
+
+  "content_scripts": [
+    {
+      "css": [ "css/exui.css" ],
+      "js": [ "js/jquery.js", "js/common.js", "js/popup.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+    }
+  ],
+
+  "icons": {
+    "48": "assets/icon48X48.png",
+    "128": "assets/icon128X128.png"
+  }
+}

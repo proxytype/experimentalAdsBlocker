@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Baloo-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/Baloo-Regular.ttf')
+}
+.ex-ui-body {
+    font-family: Baloo-Regular;
+    font-size: 14px;
+    width: 160px;
+    min-height: 150px;
+}
+
+.ex-ui-cursor {
+    cursor:pointer;
+}
+
+.ex-ui-site {
+    width:100%;
+    min-height:26px;
+    display:inline-block;
+}
+
+.ex-ui-site-sub {
+    width: 100%;
+    display: inline-block;
+    color: #444444;
+}
+
+.ex-ui-site-sub-title {
+    float: left;
+    font-size: 14px;
+    padding-left: 5px
+}
+
+
+.ex-ui-menu-img {
+    margin-top: 9px;
+}
+
+
+.ex-ui-display {
+
+}
