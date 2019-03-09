@@ -41,13 +41,8 @@ chrome.runtime.onMessage.addListener(function (message, sender, handler) {
 chrome.webRequest.onBeforeRequest.addListener(
     function (details) {
 
-
         if (details.type != undefined) {
-
-
-
             for (var i = 0; i < supportedSite.length; i++) {
-
                 if (isInitiator(details, supportedSite[i])) {
                     if (details.type == REQUEST_TYPE_MEDIA && supportedSite[i].stealthMode == STEALTH_MODE[0]) {
                         return checkUrl(details, supportedSite[i]);

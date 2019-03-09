@@ -95,11 +95,6 @@ function createElement(site) {
 
 };
 
-String.prototype.replaceAll = function (search, replacement) {
-    var target = this;
-    return target.replace(new RegExp(search, 'g'), replacement);
-};
-
 function getSiteByID(id) {
 
     if (sites != undefined) {
