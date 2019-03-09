@@ -1,6 +1,6 @@
-var WALLA = { "id": "WALLA", "displayName": "walla.co.il", "initiators": ["walla"], "isVideoOwner": true, "patterns": ["walla", "img.wcdn"], "stealthMode": STEALTH_MODE[0], "enabled": true }
-var MAKO = { "id": "MAKO", "displayName": "mako.co.il", "initiators": ["mako"], "isVideoOwner": true, "patterns": ["mako"], "stealthMode": STEALTH_MODE[0], "enabled": true }
-var IL20 = { "id": "IL20", "displayName": "20il.co.il", "initiators": ["cdn.ch20-cdnwiz", "20il"], "isVideoOwner": false, "patterns": ["cdn.ch20-cdnwiz", "20il"], "stealthMode": STEALTH_MODE[0], "enabled": true }
+var WALLA = { "id": "WALLA", "displayName": "walla.co.il", "initiators": ["walla"], "patterns": ["walla", "img.wcdn"], "stealthMode": STEALTH_MODE[0] }
+var MAKO = { "id": "MAKO", "displayName": "mako.co.il", "initiators": ["mako"], "patterns": ["mako"], "stealthMode": STEALTH_MODE[0] }
+var IL20 = { "id": "IL20", "displayName": "20il.co.il", "initiators": ["cdn.ch20-cdnwiz", "20il"], "patterns": ["cdn.ch20-cdnwiz", "20il"], "stealthMode": STEALTH_MODE[0] }
 
 var supportedSiteDefault = [WALLA, MAKO, IL20];
 var supportedSite = supportedSiteDefault;
