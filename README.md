@@ -4,7 +4,7 @@ I try to understand how ads blockers works, for doing this i need the help of th
 
 The main idea is to hook the request before sending it to the server, chrome api provide a set of listeners to achieve this, so basically is pretty easy. 
 
-The experiment cover 4 major israeli news sites loaded with ads to see the effectiveness.
+The experiment cover 4 major Israeli news sites loaded with ads:
  
 - Walla.co.il
 - Mako.co.il
